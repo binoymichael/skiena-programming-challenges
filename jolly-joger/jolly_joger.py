@@ -9,7 +9,7 @@ def process(input):
         diff = abs(int(x) - int(input[i + 1]))
         if diff < length:
             bitmap[diff] = 0
-    result = "Jolly" if all(x == 0 for x in bitmap) else "Not Jolly"
+    result = "Not Jolly" if any(x != 0 for x in bitmap) else "Jolly"
     print(result)
 
 
