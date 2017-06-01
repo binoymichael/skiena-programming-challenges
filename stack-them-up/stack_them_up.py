@@ -16,3 +16,5 @@ for line in lines:
 
 print(deck)
 
+#TODO: Inplace shuffling
+
